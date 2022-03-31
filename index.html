@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Magic 8 Ball</title>
+    <style type=" text/css">
+        * {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body/>
+<div id="content">
+    <h1> Magic Eight Ball</h1>
+    <h2>Type your question Below.....</h2>
+    <textarea name="questions space" id="" cols="30" rows="4"></textarea>
+    <br>
+    <button>shake!</button>
+    <div id="eightBall">
+        <p id="answer">Ask again later pleas</p>
+
+    </div>
+
+
+</div>
+<script type="text/javascript">
+    //creating rondom number function 
+    function generate_random(max_number) {
+        return Math.round(Math.random() * max_number);
+    }
+    //select the element on the page to interact with........
+    let button = document.querySelector("button");
+    let answer = document.querySelector("#answer");
+
+    // add aclick event to the button 
+    button.addEventListener("click", function() {
+
+        //0 yes Deffenetly
+        //1 no certainly not
+        //2 ask again letter 
+        //3 dont care 
+        //Generate number
+        let randomNumbers = generate_random(3);
+
+        //Turn therandom number into an answer using the key above 
+        let answerText = "";
+        if (randomNumbers == 0) {
+            answerText = "yes definitley";
+        } else if (randomNumbers == 1) {
+            answerText = "No certinly not";
+        } else if (randomNumbers == 2) {
+            answerText = "Ask again later";
+        } else {
+            answerText = "I really don't care";
+        }
+        answer.innerHTML = answerText;
+    });
+</script>
+</div>
+</body>

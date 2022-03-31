@@ -1,0 +1,68 @@
+h1 {
+    font-weight: 100;
+    font-size: 2.5em;
+    color: #fb804f;
+    font-weight: bold;
+}
+
+#content {
+    width: 500;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 4px dotted #fdb803;
+    text-align: center;
+    font: weight 100px;
+    background-color: #89396a;
+    font-style: italic;
+}
+
+div.eight8ball {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+div.answers {
+    background-color: rgb(red, green, blue);
+    border: 1px;
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    margin: 25% auto;
+}
+
+p#eight {
+    font-size: 10em;
+    margin: 12% auto;
+    color: black;
+}
+
+p#answers {
+    padding: 16px;
+    color: rgb(79, 64, 45);
+    letter-spacing: 1px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+#question {
+    margin: 20px;
+    padding: 20px;
+    width: 400px;
+    font-size: 22px;
+    background-color: #89396a;
+    color: #fb804f;
+    border: 4px dotted #fdb803;
+}
+
+#info {
+    font-size: 38px;
+    color: #514423;
+    font-weight: bold;
+}
